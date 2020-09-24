@@ -1,0 +1,28 @@
+Пример получения json c разделителем
+a=`$(urlfetch json https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands)`.split(`;`); 
+
+
+работа с json как со строкой a[0].toString()
+
+
+Полная структура if
+if ('$(query)'==a[0].toString()) 
+        {b[0];} 
+  else 
+        {d = b[2].toString() + 'тест $(user)'; d;}
+
+Короткий if
+  '$(query)'==a[0].toString()?b[0]:d;
+
+Цикл for
+$(eval for(i=0;i<4;i++) {i+2;})
+
+Рандом от длины массива
+Math.floor(Math.random()*(a.length-1))
+
+!editcom - редактирование команды
+!addcom - создание команды
+  первое слово - имя команды
+  -cd=5 назначение времени на срабатывание
+  -a=!команда - добавление команды в раздел alias
+  весь остальной текст попадет в раздел сообщения
