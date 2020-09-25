@@ -1,9 +1,23 @@
-function logicBotik(msg, name) 
+async function fetchGetText(url)    //функция получения текста по ссылке
 {
-aaa = msg + ' ' + name;
-fetch('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands')
-  .then(r => r.text())
-return r
+  try 
+  {
+    var response = await fetch(url);
+    var answer = await response.text();
+    var result = answer.toString().split(';'); //делаем массив по разделителю
+    return result;
+  } 
+  catch (error) 
+  {
+    console.error(error);
+  }
+}
+
+async function logicBotik(msg, name) //основная логика ботика
+{
+  aaa = msg + ' ' + name;
+  var commands = await fetchExam('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands');
+  return commands[2]
 };
 
 logicBotik(msg, name)
