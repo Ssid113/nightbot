@@ -1,1 +1,7 @@
-TellNewTime.
+function logicBotic()
+{
+  answer = 'Hello World';
+  return answer
+};
+
+logicBotic();
