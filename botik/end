@@ -1,0 +1,2 @@
+botsay = answer[Math.floor(Math.random()*(answer.length-1))];
+botsay;
