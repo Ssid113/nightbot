@@ -14,7 +14,7 @@ let command002 = [
 
 //основная проверка
 var i = 0;
-var urlAnswer = 0;
+var urlAnswer = '0';
 for(i=0;i<command001.length;i++)
 {
   msg==command001[i].toString?urlAnswer='001':' ';
