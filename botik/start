@@ -17,13 +17,13 @@ var i = 0;
 var urlAnswer = 0;
 for(i=0;i<command001.length;i++)
 {
-  msg==command001[i].toString?urlAnswer='https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/001':' ';
+  msg==command001[i].toString?urlAnswer='001':' ';
 }
 for(i=0;i<command002.length;i++)
 {
-  msg==command002[i].toString?urlAnswer='https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/002':' ';
+  msg==command002[i].toString?urlAnswer='002':' ';
 }
-urlAnswer=='0'?urlAnswer='https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/000':' '; //если ни одна команда не распознана.
+urlAnswer=='0'?urlAnswer='000':' '; //если ни одна команда не распознана.
 return urlAnswer
 };
 
