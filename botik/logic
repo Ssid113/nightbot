@@ -4,14 +4,14 @@ function logicBotik(msg, name) //основная логика ботика
   fetch('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands')
     .then(response => response.text())
     .then(answer => answer.split(';'))
-    .then(result => nextfunc(result));
+    .then(result => msg = nextfunc(result));
   return aaa;
 };
 
 function nextfunc(result)
 {
   test = result;
-  msg = test[1].toString();
+  returntest[1].toString();
 };
 
 logicBotik(msg, name);
