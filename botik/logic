@@ -1,6 +1,1 @@
-function TellNewTime()
-{
-  return 'hello'
-};
-
-TellNewTime();
+TellNewTime.
