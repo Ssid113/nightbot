@@ -1,3 +1,5 @@
+function startFunc(msg)
+{
 //команды для приветствия
 let command001 = [
 "привет",
@@ -22,3 +24,7 @@ for(i=0;i<command002.length;i++)
   msg==command002[i].toString?urlAnswer='https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/002':' ';
 }
 urlAnswer=='0'?urlAnswer='https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/000':' '; //если ни одна команда не распознана.
+return urlAnswer
+};
+
+startFunc(msg);
