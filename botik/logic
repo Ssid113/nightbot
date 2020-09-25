@@ -1,18 +1,3 @@
-async function fetchGetText(url)    //функция получения текста по ссылке
-{
-  try 
-  {
-    var response = await fetch(url);
-    var answer = await response.text();
-    var result = answer.toString().split(';'); //делаем массив по разделителю
-    return result;
-  } 
-  catch (error) 
-  {
-    console.error(error);
-  }
-}
-
 function logicBotik(msg, name) //основная логика ботика
 {
   aaa = msg + ' ' + name;
@@ -21,6 +6,7 @@ function logicBotik(msg, name) //основная логика ботика
     .then(answer => answer.split(';'))
     .then(result => nextfunc(result));
 };
+
 function nextfunc(result)
 {
   test = result;
