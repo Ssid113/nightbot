@@ -12,7 +12,5 @@ var request = new XMLHttpRequest();
         }
     };
 
-messagg = messagg.split(';');
-
 aaa = msg + ' test 1 ' + name;
 aaa;
