@@ -1,2 +1,7 @@
-aaa = 'Hello World';
-aaa;
+function logicBotik() 
+{
+aaa = 'Мама мия';
+return aaa
+};
+
+logicBotik()
