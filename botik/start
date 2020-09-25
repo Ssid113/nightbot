@@ -1,7 +1,6 @@
 function startFunc(msg)
 {
-var urlAnswer = '0';
-urlAnswer=='0'?urlAnswer='000':' '; //если ни одна команда не распознана.
+var urlAnswer = 'ghbdtn';
 return urlAnswer
 };
 
