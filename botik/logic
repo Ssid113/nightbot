@@ -4,4 +4,4 @@ function logicBotic()
   return answer
 };
 
-logicBotic();
+logicBotic()
