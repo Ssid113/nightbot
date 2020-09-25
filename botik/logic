@@ -1,2 +1,4 @@
 aaa = msg + ' ' + name;
+var resp = await fetch('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands');
+var answer = await resp.text();
 aaa;
