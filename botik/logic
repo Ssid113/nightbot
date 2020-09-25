@@ -20,4 +20,5 @@ async function logicBotik(msg, name) //основная логика ботик�
   return commands[2]
 };
 
-logicBotik(msg, name)
+answer = await logicBotik(msg, name);
+answer.toString();
