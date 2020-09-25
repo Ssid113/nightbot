@@ -1,7 +1,7 @@
-function logicBotik(name, msg) 
+function logicBotik(msg, name) 
 {
 aaa = msg + ' ' + name;
 return aaa
 };
 
-logicBotik(name, msg)
+logicBotik(msg, name)
