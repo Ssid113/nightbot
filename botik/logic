@@ -10,7 +10,7 @@ function logicBotik(msg, name) //основная логика ботика
 function nextfunc(result)
 {
   test = result;
-  test[1].toString();
+  msg = test[1].toString();
 };
 
 logicBotik(msg, name);
