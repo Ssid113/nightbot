@@ -5,6 +5,7 @@ function logicBotik(msg, name) //основная логика ботика
     .then(response => response.text())
     .then(answer => answer.split(';'))
     .then(result => nextfunc(result));
+  return aaa;
 };
 
 function nextfunc(result)
