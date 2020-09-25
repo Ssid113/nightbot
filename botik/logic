@@ -1,3 +1,3 @@
-testinggg = $(urlfetch json https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands)';
+testinggg = '$(urlfetch json https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands)';
 aaa = msg + ' test 1 ' + name;
 aaa;
