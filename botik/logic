@@ -1,9 +1,6 @@
 function TellNewTime()
 {
-  let response = await fetch('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands'); // завершается с заголовками ответа
-  let result = await response.json();
-  a = result.split(';');
-  return a[1]
+  return 'hello'
 };
 
 TellNewTime();
