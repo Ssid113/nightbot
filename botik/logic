@@ -13,12 +13,18 @@ async function fetchGetText(url)    //функция получения текс
   }
 }
 
-async function logicBotik(msg, name) //основная логика ботика
+function logicBotik(msg, name) //основная логика ботика
 {
   aaa = msg + ' ' + name;
-  var commands = await fetchExam('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands');
-  return commands[0]
+  fetch('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands')
+    .then(response => response.text())
+    .then(answer => answer.split(';'))
+    .then(result => nextfunc(result));
+};
+function nextfunc(result)
+{
+  test = result;
+  test[1];
 };
 
-answer = await logicBotik(msg, name);
-answer.toString();
+logicBotik(msg, name);
