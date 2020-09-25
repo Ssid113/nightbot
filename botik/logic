@@ -1,4 +1,2 @@
-a=`$(urlfetch json https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands)`.split(`;`);
 aaa = msg + ' test 2 ' + name;
-aaa;
-a[1];
+msg = aaa;
