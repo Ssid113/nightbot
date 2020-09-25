@@ -17,7 +17,7 @@ async function logicBotik(msg, name) //основная логика ботик�
 {
   aaa = msg + ' ' + name;
   var commands = await fetchExam('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands');
-  return commands[2]
+  return commands[0]
 };
 
 answer = await logicBotik(msg, name);
