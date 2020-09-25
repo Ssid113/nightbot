@@ -10,7 +10,7 @@ var request = new XMLHttpRequest();
                 messagg = request.responseText;
             }
         }
-    }
+    };
 
 messagg = messagg.split(';');
 
