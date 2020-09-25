@@ -1,7 +1,9 @@
 function logicBotik(msg, name) 
 {
 aaa = msg + ' ' + name;
-return aaa
+fetch('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands')
+  .then(r => r.text())
+return r
 };
 
 logicBotik(msg, name)
