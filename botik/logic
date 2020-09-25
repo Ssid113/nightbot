@@ -1,7 +1,7 @@
-function logicBotik() 
+function logicBotik(name, querty) 
 {
-aaa = 'Мама мия';
+aaa = querty + name;
 return aaa
 };
 
-logicBotik()
+logicBotik(name, querty)
