@@ -1,7 +1,2 @@
-function logicBotic()
-{
 answer = 'Hello World';
-return answer;
-};
-
-logicBotic();
+answer;
