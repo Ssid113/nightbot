@@ -1,11 +1,18 @@
-async function testfunc(msg, name)
-{
+var messagg;
+
+var request = new XMLHttpRequest();
+    request.open('GET', 'https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands', true);
+    request.send(null);
+    request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status === 200) {
+            var type = request.getResponseHeader('Content-Type');
+            if (type.indexOf("text") !== 1) {
+                messagg = request.responseText;
+            }
+        }
+    }
+
+messagg = messagg.split(';');
+
 aaa = msg + ' test 1 ' + name;
-var resp = await fetch('https://raw.githubusercontent.com/Ssid113/nightbot/master/botik/all_commands');
-var answer = await resp.text();
-return aaa;
-}
-
-
-test = await testfunc(msg, name);
-test;
+aaa;
