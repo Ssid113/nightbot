@@ -1,2 +1,10 @@
+var command001 = [
+"привет",
+"привет!"
+];
+var urlAnswer = '0';
+var i = 0;
+
+
 var urlAnswer = 'ghbdtn';
 urlAnswer;
