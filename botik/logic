@@ -1,2 +1,2 @@
-var urlAnswer = 'test';
-urlAnswer;
+aaa = 'test';
+aaa;
