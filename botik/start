@@ -1,7 +1,2 @@
-function startFunc(msg)
-{
 var urlAnswer = 'ghbdtn';
-return urlAnswer
-};
-
-startFunc('msg');
+urlAnswer;
