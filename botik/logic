@@ -1,2 +1,2 @@
-aaa = msg + ' test 2 ' + name;
-msg = aaa;
+var urlAnswer = 'test';
+urlAnswer;
